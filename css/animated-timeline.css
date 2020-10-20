@@ -43,7 +43,7 @@ body {font-family: Verdana, sans-serif;}
 }
 
 /* Fading animation */
-.fade {
+.custom-fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1s;
   animation-name: fade;
