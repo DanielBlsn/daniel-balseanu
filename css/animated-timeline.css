@@ -10,11 +10,20 @@ body {font-family: Verdana, sans-serif;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 40vw;
+  max-width: 50vw;
   position: relative;
   margin: auto;
   background:#F8F8F8;
 }
+
+.description-skills-container{
+	display: flex;
+  flex-direction: row;
+}
+.description-item{
+  flex-basis: 100%;
+  text-align: center;
+}  
 
 .indicator-container{
   display: flex;
@@ -36,9 +45,16 @@ body {font-family: Verdana, sans-serif;}
   transition: background-color 1s ease;
   border-style: solid;
   border-color: white;
+   border-radius: 10%;
+  font-weight: bold;
 }
 
-.active, .dot:hover {
+.dot.active{
+  background-color: #717171;
+  color:black;
+  background-color:white;
+}
+.dot:hover {
   background-color: #717171;
 }
 
@@ -49,6 +65,23 @@ body {font-family: Verdana, sans-serif;}
   animation-name: fade;
   animation-duration: 2s;
 }
+
+/* Skills containers */
+.container-skills {
+  width: 100%; /* Full width */
+  height: 0.5vw;
+  background-color: #ddd; /* Grey background */
+}
+.skills {
+  text-align: left; /* Right-align text */
+  color: black; /* White text color */
+}
+.skills-bar {
+	width: 80%;
+	height: 0.5vw;
+    background-color: #484848;
+}
+
 
 @-webkit-keyframes fade {
   from {opacity: .4} 
