@@ -1,5 +1,5 @@
 body {font-family: Verdana, sans-serif;}
-.mySlides {display: none}
+.custom-slides {display: none}
 
 /* strip containing all the experience to extend white bkgrd to screen width */
 .exp-strip{
@@ -7,7 +7,6 @@ body {font-family: Verdana, sans-serif;}
 	left:0;
 	right:0;
 }
-
 /* Slideshow container */
 .slideshow-container {
   max-width: 50vw;
@@ -15,17 +14,35 @@ body {font-family: Verdana, sans-serif;}
   margin: auto;
   background:#F8F8F8;
 }
-
+/* Container with description and skills side by side */
 .description-skills-container{
-	display: flex;
+  display: flex;
   flex-direction: row;
 }
-.description-item{
+/* Container with all skills */
+.all-skills{
   flex-basis: 100%;
   text-align: center;
-}  
-
-.indicator-container{
+} 
+/* Skill specific containers */
+.container-skill {
+  width: 100%; /* Full width */
+  height: 0.5vw;
+  background-color: #ddd; /* Grey background */
+}
+/* Skill text */
+.skills {
+  text-align: left; /* Right-align text */
+  color: black; /* White text color */
+}
+/* Skill bar fill */
+.skills-bar {
+	width: 80%;
+	height: 0.5vw;
+    background-color: #484848;
+}
+/* Container for roles labels */
+.indicator-labels-container{
   display: flex;
   flex-direction: row;
   max-width: 50vw;
@@ -66,23 +83,6 @@ body {font-family: Verdana, sans-serif;}
   animation-duration: 2s;
 }
 
-/* Skills containers */
-.container-skills {
-  width: 100%; /* Full width */
-  height: 0.5vw;
-  background-color: #ddd; /* Grey background */
-}
-.skills {
-  text-align: left; /* Right-align text */
-  color: black; /* White text color */
-}
-.skills-bar {
-	width: 80%;
-	height: 0.5vw;
-    background-color: #484848;
-}
-
-
 @-webkit-keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
@@ -93,20 +93,17 @@ body {font-family: Verdana, sans-serif;}
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
+/* On smaller screens */
 @media only screen and (max-width: 800px) {
-  .text {font-size: 11px}
-
-/* On smaller screens, make indicator container to column */
-
-.slideshow-container {
-  max-width: 90vw;
-}
+ /*increase slideshow container size */
+ .slideshow-container {
+    max-width: 90vw;
+  }
+  /*make indicator container to column */
   .indicator-container {
     flex-direction: column;
 	margin: auto;
   }
-
 }
 @media only screen and (min-width: 800px) {
 	.dot:hover {

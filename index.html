@@ -14,11 +14,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	<!--- animations -->
-	<link rel="stylesheet" type="text/css" href="css/animated-timeline.css" />
-	  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <!--- animations -->
+    <link rel="stylesheet" type="text/css" href="css/animated-timeline.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title></title>
   </head>
   <body style="background:black">
@@ -47,39 +45,38 @@
     </div>
     <div class="exp-strip">
       <div class="slideshow-container">
-        <div class="indicator-container">
-          <span class="dot" onclick="currentSlide(1)">Unlisted</span> 
-          <span class="dot" onclick="currentSlide(2)">Lumity</span> 
-          <span class="dot" onclick="currentSlide(3)">Soma</span> 
-          <span class="dot" onclick="currentSlide(4)">McCurrach</span> 
-          <span class="dot" onclick="currentSlide(5)">McCurrach</span>
-		</div>
+        <div class="indicator-labels-container">
+        <span class="dot" onclick="currentSlide(1)" onmouseover="currentSlide(1)">Unlisted</span> 
+        <span class="dot" onclick="currentSlide(2)" onmouseover="currentSlide(2)">Lumity</span> 
+        <span class="dot" onclick="currentSlide(3)" onmouseover="currentSlide(3)">Soma</span> 
+        <span class="dot" onclick="currentSlide(4)" onmouseover="currentSlide(4)">McCurrach</span> 
+        <span class="dot" onclick="currentSlide(5)" onmouseover="currentSlide(5)">McCurrach</span></div>
         <!--- Experience 1 -->
-        <div class="mySlides custom-fade">
+        <div class="custom-slides custom-fade">
           <div class="description-skills-container">
-			  <div class="animate__animated animate__fadeInLeft description-item">
-			  <h4>Machine Learning Engineer</h4>
-			  <h4>May 2019 - September 2020</h4>
-			  <p>When I joined Unlisted, it was a very early pre-product startup with an idea on paper of how to estimate private
-			  company valuations more accurately based on public market data. I transformed that idea to an actual ML workflow, taking
-			  data through the whole ETL process.</p>
-			  </div>
-			  <div class="animate__animated animate__fadeInRight description-item">
-				  <p class="skills">Python</p>
-				  <div class="container-skills">
-					<div class="skills-bar"></div>
-				  </div>
-						  <p class="skills">Python</p>
-				  <div class="container-skills">
-					<div class="skills-bar"></div>
-				  </div>
-						  <p class="skills">Python</p>
-				  <div class="container-skills">
-					<div class="skills-bar"></div>
-				  </div>
-			  </div>
-		    </div>
-		    <ul>
+            <div class="animate__animated animate__fadeInLeft description-item">
+              <h4>Machine Learning Engineer</h4>
+              <h4>May 2019 - September 2020</h4>
+              <p>When I joined Unlisted, it was a very early pre-product startup with an idea on paper of how to estimate private
+              company valuations more accurately based on public market data. I transformed that idea to an actual ML workflow,
+              taking data through the whole ETL process.</p>
+            </div>
+            <div class="animate__animated animate__fadeInRight all-skills">
+              <p class="skills">Python</p>
+              <div class="container-skill">
+                <div class="skills-bar"></div>
+              </div>
+              <p class="skills">Python</p>
+              <div class="container-skill">
+                <div class="skills-bar"></div>
+              </div>
+              <p class="skills">Python</p>
+              <div class="container-skill">
+                <div class="skills-bar"></div>
+              </div>
+            </div>
+          </div>
+          <ul>
             <li>Worked closely with various stakeholders with financial markets expertise in order to thoroughly understand the
             problem and how to approach it from an ML perspective.</li>
             <li>Managed the data pipeline from raw excel dumps to cleansed database format with Python, within the AWS
@@ -93,11 +90,12 @@
           </ul>
         </div>
         <!--- Experience 2 -->
-        <div class="mySlides custom-fade">
+        <div class="custom-slides custom-fade">
           <h4>January 2018 - Present</h4>
-          <p class="animate__animated animate__fadeInDown">In the context of my work, Lumity is an e-commerce company which sells their own unique products. When I joined, there
-          was no fixed data function, which was a great opportunity to build and direct it as I considered optimal. The data I
-          worked with was mainly sales, financial, marketing and other software engineering tasks.</p>
+          <p class="animate__animated animate__fadeInDown">In the context of my work, Lumity is an e-commerce company which sells
+          their own unique products. When I joined, there was no fixed data function, which was a great opportunity to build and
+          direct it as I considered optimal. The data I worked with was mainly sales, financial, marketing and other software
+          engineering tasks.</p>
           <h4>Data Analyst/Digital Data Scientist</h4>
           <ul>
             <li>Designed and built the data infrastructure in the form of a MySQL database, by using Python to extract, prepare and
@@ -118,12 +116,12 @@
           </ul>
         </div>
         <!--- Experience 3 -->
-        <div class="mySlides custom-fade">
+        <div class="custom-slides custom-fade">
           <h4>April 2018 - June 2019</h4>
-          <p class="animate__animated animate__fadeInDown">My partnership with Dr. Cody Haun (Soma Scientific Consulting) stemmed from the fact that I was competing in
-          powerlifting and was looking for a high level coach. With a scientific background, Dr Haun was gathering a lot of data
-          when coaching clients and found it difficult and time consuming to manage. I completed all the work with Soma in my own
-          personal time, while working full time for Lumity.</p>
+          <p class="animate__animated animate__fadeInDown">My partnership with Dr. Cody Haun (Soma Scientific Consulting) stemmed
+          from the fact that I was competing in powerlifting and was looking for a high level coach. With a scientific background,
+          Dr Haun was gathering a lot of data when coaching clients and found it difficult and time consuming to manage. I
+          completed all the work with Soma in my own personal time, while working full time for Lumity.</p>
           <h3>Soma Scientific</h3>
           <h4>Consulting</h4>
           <ul>
@@ -137,10 +135,10 @@
           </ul>
         </div>
         <!--- Experience 4 -->
-        <div class="mySlides custom-fade">
+        <div class="custom-slides custom-fade">
           <h4>May 2017 - December 2017</h4>
-          <p class="animate__animated animate__fadeInDown">My role as an Insight Analyst was to take a more holistic business view, working with numerous stakeholders to
-          optimize the planning and execution processes.</p>
+          <p class="animate__animated animate__fadeInDown">My role as an Insight Analyst was to take a more holistic business view,
+          working with numerous stakeholders to optimize the planning and execution processes.</p>
           <h4>Business Insight Analyst</h4>
           <ul>
             <li>Led the improvement of tools evaluating shape of service through statistical analysis resulting in an ROI
@@ -154,11 +152,11 @@
           </ul>
         </div>
         <!--- Experience 5 -->
-        <div class="mySlides custom-fade">
+        <div class="custom-slides custom-fade">
           <h4>October 2015 - March 2017</h4>
-          <p class="animate__animated animate__fadeInDown">McCurrach is a sales consultancy which workes multiple brands to increase sales in both large and smaller national
-          stores. All the data captured from observed stores is then analysed to observe KPI adherence, which was my main
-          responsability.</p>
+          <p class="animate__animated animate__fadeInDown">McCurrach is a sales consultancy which workes multiple brands to
+          increase sales in both large and smaller national stores. All the data captured from observed stores is then analysed to
+          observe KPI adherence, which was my main responsability.</p>
           <h4>Market Analyst/Operations Executive</h4>
           <ul>
             <li>Created multiple reporting suites over large data sets to ensure high levels of KPI management are delivered
@@ -172,6 +170,6 @@
         </div>
       </div>
     </div>
-<script src="js/animated-timeline.js"></script>
+    <script src="js/animated-timeline.js"></script>
   </body>
 </html>
