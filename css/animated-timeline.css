@@ -1,81 +1,108 @@
-body {font-family: Verdana, sans-serif;}
-.custom-slides {display: none}
+body {
+  font-family: Verdana, sans-serif;
+}
+
+.custom-slides {
+  display: none
+}
 
 /* strip containing all the experience to extend white bkgrd to screen width */
-.exp-strip{
-	background:#F8F8F8;
-	left:0;
-	right:0;
+
+.exp-strip {
+  background: #F8F8F8;
+  left: 0;
+  right: 0;
 }
+
 /* Slideshow container */
+
 .slideshow-container {
   max-width: 50vw;
   position: relative;
   margin: auto;
-  background:#F8F8F8;
+  background: #F8F8F8;
 }
+
 /* Container with description and skills side by side */
-.description-skills-container{
+
+.description-skills-container {
   display: flex;
   flex-direction: row;
 }
+
 /* Container with all skills */
-.all-skills{
+
+.all-skills {
   flex-basis: 100%;
   text-align: center;
-} 
+}
+
 /* Skill specific containers */
+
 .container-skill {
-  width: 100%; /* Full width */
+  width: 100%;
+  /* Full width */
   height: 0.5vw;
-  background-color: #ddd; /* Grey background */
+  background-color: #ddd;
+  /* Grey background */
 }
+
 /* Skill text */
+
 .skills {
-  text-align: left; /* Right-align text */
-  color: black; /* White text color */
+  text-align: left;
+  /* Right-align text */
+  color: black;
+  /* White text color */
 }
+
 /* Skill bar fill */
+
 .skills-bar {
-	width: 80%;
-	height: 0.5vw;
-    background-color: #484848;
+  width: 80%;
+  height: 0.5vw;
+  background-color: #484848;
 }
+
 /* Container for roles labels */
-.indicator-labels-container{
+
+.indicator-labels-container {
   display: flex;
   flex-direction: row;
   max-width: 50vw;
-  background-color:black;
-  text-align:center;
+  background-color: black;
+  text-align: center;
   align-items: center;
   justify-content: center;
-  padding:0.3vw;
+  padding: 0.3vw;
 }
 
 /* The dots/bullets/indicators */
+
 .dot {
   cursor: pointer;
   margin-left: 0.7vw;
   margin-right: 0.7vw;
-  color:white;
+  color: white;
   transition: background-color 1s ease;
   border-style: solid;
   border-color: white;
-   border-radius: 10%;
+  border-radius: 10%;
   font-weight: bold;
 }
 
-.dot.active{
+.dot.active {
   background-color: #717171;
-  color:black;
-  background-color:white;
+  color: black;
+  background-color: white;
 }
+
 .dot:hover {
   background-color: #717171;
 }
 
 /* Fading animation */
+
 .custom-fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1s;
@@ -84,32 +111,42 @@ body {font-family: Verdana, sans-serif;}
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
 }
 
 /* On smaller screens */
+
 @media only screen and (max-width: 800px) {
- /*increase slideshow container size */
- .slideshow-container {
+  /*increase slideshow container size */
+  .slideshow-container {
     max-width: 90vw;
   }
   /*make indicator container to column */
   .indicator-container {
     flex-direction: column;
-	margin: auto;
+    margin: auto;
   }
 }
+
 @media only screen and (min-width: 800px) {
-	.dot:hover {
-    width:10vw;
+  .dot:hover {
+    width: 10vw;
   }
-  	.dot {
-    width:10vw;
+  .dot {
+    width: 10vw;
   }
 }
