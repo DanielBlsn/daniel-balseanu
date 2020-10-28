@@ -7,9 +7,9 @@ html {
     flex-direction: column;
     background-color: rgba(47, 109, 150,0.7);
     overflow: hidden;
-    top: 5%;
     right: 5%;
     width: 100px;
+    z-index: 99;
 }
 
 .navbar-item {
@@ -34,8 +34,13 @@ html {
     color: white;
 }
 
+.pre-sticky {
+    position: absolute;
+    top: 100%;
+  }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
     position: fixed;
+    top: 5%;
   }
