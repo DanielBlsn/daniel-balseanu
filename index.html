@@ -13,15 +13,24 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <!--- animations -->
+  <!--- animations/sections css -->
   <link rel="stylesheet" type="text/css" href="css/experience-timeline.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" type="text/css" href="css/images.css" />
   <link rel="stylesheet" type="text/css" href="css/summary.css" />
+  <link rel="stylesheet" type="text/css" href="css/navigation.css" />
   <title></title>
 </head>
 
 <body style="background:black">
+
+  <!--- Navigation -->
+  <div id="custom-navbar" class="sticky" >
+    <a class="navbar-item active" href="#summary">Summary</a>
+    <a class="navbar-item" href="#experience">Experience</a>
+    <a class="navbar-item" href="#education">Education</a>
+    <a class="navbar-item" href="#about">About</a>
+  </div> 
 
   <div class="top-img">
     <h1 class="animate__animated animate__fadeIn top-text text-center "></h1>
@@ -29,13 +38,18 @@
 
   <!--- Summary -->
   <div class="container-fluid summary-container">
+    <a id="summary" style="scroll-behavior: smooth"></a>
     <h1 class="text-center text-light">Daniel Balseanu</h1>
     <p class="text-center text-light">A strategic thinker, I'm passionate about solving problems using data, machine
       learning and just knowledge.</p>
     <p class="text-center text-light">Interested in gaining a deeper understanding and
       constantly curious, I ask questions such as: ‘How
       does it work?’, ‘Why?’, ‘How can we improve?’.</p>
+
+    <!--- Summarry Skills Diagrams -->
     <div class="ven-skills-container">
+
+      <!--- Venn Diagram Container 1 -->
       <div class="venn-container">
 
         <div class="venn-circle circle-center-main">
@@ -55,6 +69,8 @@
         </div>
 
       </div>
+
+      <!--- Venn Diagram Container 2 -->
       <div class="venn-container">
 
         <div class="venn-circle circle-center-main">
@@ -64,7 +80,6 @@
         <div class="venn-circle circle-top">
           <p class="circle-text">Pytorch</p>
         </div>
-
 
         <div class="venn-circle circle-right">
           <p class="circle-text">Scikit-Learn</p>
@@ -80,6 +95,8 @@
 
       </div>
     </div>
+
+    <!--- Venn Diagram Container 3 -->
     <div class="ven-skills-container">
       <div class="venn-container">
 
@@ -90,7 +107,6 @@
         <div class="venn-circle circle-top">
           <p class="circle-text">MySQL</p>
         </div>
-
 
         <div class="venn-circle circle-right">
           <p class="circle-text">Power BI</p>
@@ -105,6 +121,8 @@
         </div>
 
       </div>
+
+      <!--- Venn Diagram Container 4 -->
       <div class="venn-container">
 
         <div class="venn-circle circle-center-main">
@@ -129,6 +147,7 @@
 
   <!--- Experience -->
   <div class="exp-strip">
+    <a id="experience" style="scroll-behavior: smooth"></a>
     <div class="slideshow-container">
       <h1 class="text-center text-dark">Experience</h1>
       <!--- Experience Labels -->
@@ -349,6 +368,7 @@
   <div style="height: 50vh;"></div>
   <!--- JS for experience timeline -->
   <script src="js/animated-timeline.js"></script>
+  <script src="js/navbar.js"></script>
 </body>
 
 </html>
