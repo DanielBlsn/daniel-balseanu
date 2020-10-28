@@ -5,13 +5,14 @@ html {
 #custom-navbar {
     display: flex;
     flex-direction: column;
-    background-color: rgba(47, 109, 150,0.8);
-    border-radius: 5%;
+    background-color: rgba(47, 109, 150,0.7);
     overflow: hidden;
+    top: 5%;
+    right: 5%;
+    width: 100px;
 }
 
 .navbar-item {
-
     color:white;
     text-align: center;
     padding: 23px 0;
@@ -29,7 +30,7 @@ html {
 }
 
 .active{
-    background-color: #777d93;
+    background-color: rgba(47, 109, 150, 0.95);
     color: white;
 }
 
@@ -37,6 +38,4 @@ html {
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
     position: fixed;
-    top: 5%;
-    right: 5%;
   }
