@@ -41,11 +41,12 @@ html, body {
 }
 
 /* change the div hight to 50% of screen when it's too small */
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1120px) {
   .top-img {
     height: 50vh;
   }
 }
+
 
 /* text face in duration */
 

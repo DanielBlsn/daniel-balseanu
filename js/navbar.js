@@ -22,11 +22,16 @@ var navbar = document.getElementById("custom-navbar");
 
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
-// Add the sticky class to the navbar when you reach its scroll position. Add pre-sticky otherwise to keep position absolute.
+
 function myFunction() {
-  if (window.pageYOffset >= sticky) {
+  if (window.innerWidth < 1120) {
+    // Always add sticky when the screen is small so navbar will be on top
+    navbar.className = "sticky";
+    // Add the sticky class to the navbar when you reach its scroll position.
+  } else if (window.pageYOffset >= sticky) {
     navbar.className = "sticky";
   } else {
+    // Add pre-sticky otherwise to keep position absolute.
     navbar.className = "pre-sticky";
   }
 }
