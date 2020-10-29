@@ -19,6 +19,7 @@
   <link rel="stylesheet" type="text/css" href="css/images.css" />
   <link rel="stylesheet" type="text/css" href="css/summary.css" />
   <link rel="stylesheet" type="text/css" href="css/navigation.css" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
   <title></title>
 </head>
 
@@ -30,11 +31,12 @@
   </div>
 
   <!--- Navigation -->
-  <div id="custom-navbar" class="pre-sticky">
-    <a class="navbar-item active" href="#summary">Summary</a>
-    <a class="navbar-item" href="#experience">Experience</a>
-    <a class="navbar-item" href="#education">Education</a>
-    <a class="navbar-item" href="#about">About</a>
+  <div id="custom-navbar" class="pre-sticky">  
+    <a class="navbar-item navbar-item-menu" onclick="openNav()">&#9776</a>
+    <a class="navbar-item active"  id= "menu-item-1" href="#summary" onclick="closeNav()">Summary</a>
+    <a class="navbar-item" id= "menu-item-2" href="#experience" onclick="closeNav()">Experience</a>
+    <a class="navbar-item" id= "menu-item-3" href="#education" onclick="closeNav()">Education</a>
+    <a class="navbar-item" id= "menu-item-4" href="#about" onclick="closeNav()">About</a>
   </div> 
 
   <!--- Summary -->

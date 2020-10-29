@@ -1,11 +1,11 @@
 html {
     scroll-behavior: smooth;
-  }  
+}
 
 #custom-navbar {
     display: flex;
     flex-direction: column;
-    background-color: rgba(47, 109, 150,0.7);
+    background-color: rgba(47, 109, 150, 0.7);
     overflow: hidden;
     right: 5%;
     width: 100px;
@@ -13,15 +13,17 @@ html {
 }
 
 .navbar-item {
-    color:white;
+    color: white;
+    display: inline;
     text-align: center;
     padding: 23px 0;
-    font-size: 15px;
+    font-size: 17px;
+    font-family: 'Open Sans';
+    font-weight: 500;
     cursor: pointer;
     height: 70px;
     width: 100px;
     text-decoration: none;
-
 }
 
 .navbar-item:hover {
@@ -29,7 +31,7 @@ html {
     text-decoration: none;
 }
 
-.active{
+.active {
     background-color: rgba(47, 109, 150, 0.95);
     color: white;
 }
@@ -37,10 +39,39 @@ html {
 .pre-sticky {
     position: absolute;
     top: 100%;
-  }
+}
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+
 .sticky {
     position: fixed;
     top: 5%;
-  }
+}
+
+.navbar-item-menu{
+    display: none;
+}
+
+@media screen and (max-width: 1120px) {
+    #custom-navbar {
+        width: 100%;
+        right: auto;
+        top: 0%;
+        height: 45px;
+    }
+    .navbar-item {
+        width: 100%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        visibility: hidden;
+    }
+    .pre-sticky {
+        top: 90%;
+    }
+    .navbar-item-menu{
+        visibility: visible;
+    }
+}
+
