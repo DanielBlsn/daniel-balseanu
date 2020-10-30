@@ -1,4 +1,4 @@
 # daniel-balseanu
-Website describing my professional experience.
+Interactive CV describing my experience and knowledge.
 
 https://danielblsn.github.io/daniel-balseanu/
