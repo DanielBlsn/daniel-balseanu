@@ -51,6 +51,7 @@ function closeNav() {
     document.getElementById("menu-item-3").style.visibility = "hidden";
     document.getElementById("menu-item-4").style.visibility = "hidden";
     document.getElementById("custom-navbar").style.height = document.getElementById("menu-item-1").style.height;
+
   }
 }
 
