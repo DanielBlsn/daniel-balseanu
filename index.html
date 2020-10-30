@@ -26,23 +26,23 @@
 <body style="background:black">
 
   <div class="img-container">
-    
-  <div class="top-img"> 
+
+    <div class="top-img">
+    </div>
+    <h1 class="animate__animated animate__fadeIn top-text text-center">Daniel Balseanu</h1>
   </div>
-  <h1 class="animate__animated animate__fadeIn top-text text-center">Daniel Balseanu</h1>
-</div>
 
   <!--- Navigation -->
-  <div id="custom-navbar" class="pre-sticky">  
+  <div id="custom-navbar" class="pre-sticky">
     <a class="navbar-item navbar-item-menu" onclick="openNav()">&#9776</a>
-    <a class="navbar-item active"  id= "menu-item-1" href="#summary" onclick="closeNav()">Summary</a>
-    <a class="navbar-item" id= "menu-item-2" href="#experience" onclick="closeNav()">Experience</a>
-    <a class="navbar-item" id= "menu-item-3" href="#education" onclick="closeNav()">Education</a>
-    <a class="navbar-item" id= "menu-item-4" href="#about" onclick="closeNav()">About</a>
-  </div> 
+    <a class="navbar-item active" id="menu-item-1" href="#summary" onclick="closeNav()">Summary</a>
+    <a class="navbar-item" id="menu-item-2" href="#experience" onclick="closeNav()">Experience</a>
+    <a class="navbar-item" id="menu-item-3" href="#education" onclick="closeNav()">Education</a>
+    <a class="navbar-item" id="menu-item-4" href="#about" onclick="closeNav()">About</a>
+  </div>
 
   <!--- Summary -->
-  <a id="summary" style="scroll-behavior: smooth"></a>
+  <a id="summary" style="scroll-behavior: smooth; position:relative; top:5%"></a>
   <div class="container-fluid summary-container">
     <h1 class="text-center text-light pb-5">Profile</h1>
     <p class="text-center text-light">A strategic thinker, I'm passionate about solving problems using data, machine
@@ -79,7 +79,7 @@
       <div class="venn-container">
 
         <div class="venn-circle circle-center-main">
-          <p class="circle-text text-center-main-2">ML Frameworks</p>
+          <p class="circle-text text-center-main">ML/AI Frameworks</p>
         </div>
 
         <div class="venn-circle circle-top">
@@ -131,7 +131,7 @@
       <div class="venn-container">
 
         <div class="venn-circle circle-center-main">
-          <p class="circle-text text-center-main-4"><b>Learning/Work in progress</b> <br> Web Frameworks</p>
+          <p class="circle-text text-center-main-2"><b>Learning/Work in progress</b> <br> Web Frameworks</p>
         </div>
 
         <div class="venn-circle circle-top-left">
@@ -149,17 +149,18 @@
       </div>
     </div>
   </div>
-
+  <a id="experience" style="scroll-behavior: smooth; position:relative; top:2%"></a>
   <!--- Experience -->
   <div class="exp-strip">
-    <a id="experience" style="scroll-behavior: smooth"></a>
+    
     <div class="slideshow-container">
-      <h1 class="text-center text-dark">Experience</h1>
+      <h1 class="text-center text-dark pt-2 ">Experience</h1>
       <!--- Experience Labels -->
       <div class="indicator-labels-container">
         <span class="dot" onclick="currentSlide(1)" onmouseover="currentSlide(1)">Unlisted</span>
         <span class="dot" onclick="currentSlide(2)" onmouseover="currentSlide(2)">Lumity</span>
         <span class="dot" onclick="currentSlide(3)" onmouseover="currentSlide(3)">Soma</span>
+        <div class="break-flex-exp"></div>
         <span class="dot" onclick="currentSlide(4)" onmouseover="currentSlide(4)">McCurrach</span>
         <span class="dot" onclick="currentSlide(5)" onmouseover="currentSlide(5)">McCurrach</span>
       </div>
