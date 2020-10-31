@@ -24,11 +24,8 @@ var navbar = document.getElementById("custom-navbar");
 var sticky = navbar.offsetTop;
 
 function myFunction() {
-  if (window.innerWidth < 1120) {
-    // Always add sticky when the screen is small so navbar will be on top
-    navbar.className = "sticky";
-    // Add the sticky class to the navbar when you reach its scroll position.
-  } else if (window.pageYOffset >= sticky) {
+  // Add the sticky class to the navbar when you reach its scroll position.
+  if (window.pageYOffset >= sticky) {
     navbar.className = "sticky";
   } else {
     // Add pre-sticky otherwise to keep position absolute.
@@ -36,14 +33,22 @@ function myFunction() {
   }
 }
 
+// Make the navigation items visible when on phone when clicking on main button
 function openNav() {
-  document.getElementById("menu-item-1").style.visibility = "visible";
-  document.getElementById("menu-item-2").style.visibility = "visible";
-  document.getElementById("menu-item-3").style.visibility = "visible";
-  document.getElementById("menu-item-4").style.visibility = "visible";
-  document.getElementById("custom-navbar").style.height = "auto";
+  // When all the menu buttons are visible
+  // Close the navbar when pressing the main menu button
+  if (document.getElementById("menu-item-1").style.visibility == "visible") {
+    closeNav()
+  } else {
+    document.getElementById("menu-item-1").style.visibility = "visible";
+    document.getElementById("menu-item-2").style.visibility = "visible";
+    document.getElementById("menu-item-3").style.visibility = "visible";
+    document.getElementById("menu-item-4").style.visibility = "visible";
+    document.getElementById("custom-navbar").style.height = "auto";
+  }
 }
 
+// Close the navbar by making the elments hidden and shrinking the button
 function closeNav() {
   if (window.innerWidth < 1120) {
     document.getElementById("menu-item-1").style.visibility = "hidden";

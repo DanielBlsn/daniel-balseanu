@@ -1,0 +1,113 @@
+.education-container {
+  display: flex;
+  flex-direction: column;
+  width: calc(100vw/4 + 480px);
+  max-width: 90vw;
+  position: relative;
+  margin: auto;
+}
+
+.timeline-row {
+  width: calc(25% + 360px);
+  max-width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vh;
+  transition: color 0.5s linear, background-color 0.5s linear;
+}
+
+.bg-1{
+  background-color: rgb(73,102,118);
+}
+
+.bg-1:hover{
+  background-color: rgba(73,102,118, 0.7);
+}
+
+.bg-2{
+  background-color: rgb(28,18,29);
+}
+
+.bg-2:hover{
+  background-color: rgba(28,18,29, 0.7);
+}
+.timeline-row-left {
+  border-radius: 0 30px 30px 0;
+  align-self: start;
+}
+
+.timeline-row-right {
+  border-radius: 30px 0 0 30px;
+  align-self: end;
+}
+
+.timeline-title-year {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.timeline-title, .timeline-year {
+  flex-basis: 100%;
+  font-size: max(1.1vw, 15px);
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right{
+  text-align: right;
+}
+
+.timeline-description-overlay {
+  display: grid;
+  width: 75%;
+  justify-content: center;
+}
+
+.timeline-description {
+  font-family: 'Poppins', sans-serif;
+  font-size: max(1vw, 14px);
+  text-align: justify;
+  overflow-wrap: break-word;
+  word-spacing: -1px;
+  position: relative;
+  top: 5%;
+  z-index: 1;
+  /* overlap the description with overlay by selecting same column and row */
+  grid-column: 1 / 2;
+  grid-row: 1;
+}
+
+.timeline-description-left {
+  right: 10%;
+}
+
+.timeline-description-right {
+  left: 10%;
+}
+
+/* White transparent overlay */
+
+.timeline-overlay {
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 0;
+  position: relative;
+  grid-column: 1 / 2;
+  grid-row: 1;
+  width: 116.5%;
+}
+
+.timeline-overlay-left {
+  border-radius: 0 30px 30px 0;
+  left: -16.5%;
+}
+
+.timeline-overlay-right {
+  border-radius: 30px 0 0 30px;
+  right: 0;
+}

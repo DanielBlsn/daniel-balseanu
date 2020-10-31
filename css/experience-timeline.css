@@ -11,9 +11,8 @@ body {
 .exp-strip {
   background: #F8F8F8;
   min-height: 65vh;
-  left: 0;
-  right: 0;
   padding-top: 5vh;
+  padding-bottom: 5vh;
 }
 
 /* Slideshow container */

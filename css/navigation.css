@@ -56,7 +56,6 @@ html {
     #custom-navbar {
         width: 100%;
         right: auto;
-        top: 0%;
         height: 45px;
     }
     .navbar-item {
@@ -67,8 +66,8 @@ html {
         justify-content: center;
         visibility: hidden;
     }
-    .pre-sticky {
-        top: 90%;
+    .sticky {
+        top: 0%;
     }
     .navbar-item-menu{
         visibility: visible;

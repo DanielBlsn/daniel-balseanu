@@ -42,10 +42,20 @@ html, body {
 .img-container h1 {
   position: absolute;
   text-align: center;
-  top: 10%;
-  left: 10%;
+  top: 8%;
+  left: 8%;
   margin: 0;
   font-size: max(2.6vw, 25px);
+  color: #C0C0C0;
+}
+
+.img-container h2 {
+  position: absolute;
+  text-align: center;
+  top: 17%;
+  left: 8%;
+  margin: 0;
+  font-size: max(2.2vw, 22px);
   color: #C0C0C0;
 }
 
