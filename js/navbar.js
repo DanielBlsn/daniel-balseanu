@@ -1,29 +1,15 @@
-// Get the container element
-var navContainer = document.getElementById("custom-navbar");
-
-// Get all buttons with class="btn" inside the container
-var navItems = navContainer.getElementsByClassName("navbar-item");
-
-// Loop through the buttons and add the active class to the current/clicked button
-for (var i = 0; i < navItems.length; i++) {
-  navItems[i].addEventListener("click", function () {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
+// When the user scrolls the page, execute the sticky navbar function 
+window.onscroll = function () { stickyNavbar(); highlightNavbarElement(); };
 
 
-// When the user scrolls the page, execute myFunction
-window.onscroll = function () { myFunction() };
+function stickyNavbar() {
 
-// Get the navbar
-var navbar = document.getElementById("custom-navbar");
+  // Get the navbar
+  var navbar = document.getElementById("custom-navbar");
 
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
+  // Get the offset position of the navbar
+  var sticky = navbar.offsetTop;
 
-function myFunction() {
   // Add the sticky class to the navbar when you reach its scroll position.
   if (window.pageYOffset >= sticky) {
     navbar.className = "sticky";
@@ -31,6 +17,25 @@ function myFunction() {
     // Add pre-sticky otherwise to keep position absolute.
     navbar.className = "pre-sticky";
   }
+}
+
+
+function highlightNavbarElement() {
+  // Select all navbar menu items whose start (^) id string is below
+  let mainNavLinks = document.querySelectorAll('[id^="menu-item-"]');
+
+  let fromTop = window.scrollY;
+
+  mainNavLinks.forEach((link, i) => {
+    let section = document.querySelector(link.hash);
+    var currentActive = document.getElementsByClassName("active")[0];
+    section.offsetTop + section.offsetHeight > fromTop;
+    if (section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop) {
+      currentActive.classList.remove("active");
+      link.classList.add("active");
+    }
+  });
 }
 
 // Make the navigation items visible when on phone when clicking on main button

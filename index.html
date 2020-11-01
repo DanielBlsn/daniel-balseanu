@@ -13,10 +13,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!--- icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!--- animations/sections css -->
-  <link rel="stylesheet" type="text/css" href="css/experience-timeline.css" />
+  <link rel="stylesheet" type="text/css" href="css/experience.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" type="text/css" href="css/images.css" />
+  <link rel="stylesheet" type="text/css" href="css/animation-top.css" />
   <link rel="stylesheet" type="text/css" href="css/summary.css" />
   <link rel="stylesheet" type="text/css" href="css/navigation.css" />
   <link rel="stylesheet" type="text/css" href="css/education.css" />
@@ -39,444 +42,482 @@
     <a class="navbar-item active" id="menu-item-1" href="#profile" onclick="closeNav()">Profile</a>
     <a class="navbar-item" id="menu-item-2" href="#experience" onclick="closeNav()">Experience</a>
     <a class="navbar-item" id="menu-item-3" href="#education" onclick="closeNav()">Education</a>
-    <a class="navbar-item" id="menu-item-4" href="#about" onclick="closeNav()">About</a>
+    <a class="navbar-item" id="menu-item-4" href="#contact" onclick="closeNav()">Contact</a>
   </div>
 
   <!--- Summary -->
-  <a id="profile" style="scroll-behavior: smooth; position:relative; top:5%"></a>
-  <div class="container-fluid summary-container">
-    <h1 class="text-center text-light pb-5">Profile</h1>
-    <p class="text-center text-light">A strategic thinker, I'm passionate about solving problems using data, machine
-      learning and just knowledge.</p>
-    <p class="text-center text-light">Interested in gaining a deeper understanding and
-      constantly curious, I ask questions such as: ‘How
-      does it work?’, ‘Why?’, ‘How can we improve?’.</p>
+  <section id="profile" class="pt-1" style="scroll-behavior: smooth;">
+    <div class="container-fluid summary-container">
+      <h1 class="text-center text-light pb-5">Profile</h1>
+      <p class="text-center text-light">A strategic thinker, I'm passionate about solving problems using data, machine
+        learning and just knowledge.</p>
+      <p class="text-center text-light">Interested in gaining a deeper understanding and
+        constantly curious, I ask questions such as: ‘How
+        does it work?’, ‘Why?’, ‘How can we improve?’.</p>
 
-    <!--- Summarry Skills Diagrams -->
-    <div class="ven-skills-container">
+      <!--- Summarry Skills Diagrams -->
+      <div class="ven-skills-container">
 
-      <!--- Venn Diagram Container 1 -->
-      <div class="venn-container">
+        <!--- Venn Diagram Container 1 -->
+        <div class="venn-container">
 
-        <div class="venn-circle circle-center-main">
-          <p class="circle-text text-center-main">Programming Languages</p>
+          <div class="venn-circle circle-center-main">
+            <p class="circle-text text-center-main">Programming Languages</p>
+          </div>
+
+          <div class="venn-circle circle-top">
+            <p class="circle-text">Python</p>
+          </div>
+
+          <div class="venn-circle circle-bot-left">
+            <p class="circle-text">HTML/CSS</p>
+          </div>
+
+          <div class="venn-circle circle-bot-right">
+            <p class="circle-text">JavaScript</p>
+          </div>
+
         </div>
 
-        <div class="venn-circle circle-top">
-          <p class="circle-text">Python</p>
-        </div>
+        <!--- Venn Diagram Container 2 -->
+        <div class="venn-container">
 
-        <div class="venn-circle circle-bot-left">
-          <p class="circle-text">HTML/CSS</p>
-        </div>
+          <div class="venn-circle circle-center-main">
+            <p class="circle-text text-center-main">ML/AI <br>Frameworks</p>
+          </div>
 
-        <div class="venn-circle circle-bot-right">
-          <p class="circle-text">JavaScript</p>
-        </div>
+          <div class="venn-circle circle-top">
+            <p class="circle-text">Pytorch</p>
+          </div>
 
+          <div class="venn-circle circle-right">
+            <p class="circle-text">Scikit-Learn</p>
+          </div>
+
+          <div class="venn-circle circle-bot">
+            <p class="circle-text">XGBoost</p>
+          </div>
+
+          <div class="venn-circle circle-left">
+            <p class="circle-text">Others</p>
+          </div>
+
+        </div>
       </div>
 
-      <!--- Venn Diagram Container 2 -->
-      <div class="venn-container">
+      <!--- Venn Diagram Container 3 -->
+      <div class="ven-skills-container">
+        <div class="venn-container">
 
-        <div class="venn-circle circle-center-main">
-          <p class="circle-text text-center-main">ML/AI <br>Frameworks</p>
-        </div>
-
-        <div class="venn-circle circle-top">
-          <p class="circle-text">Pytorch</p>
-        </div>
-
-        <div class="venn-circle circle-right">
-          <p class="circle-text">Scikit-Learn</p>
-        </div>
-
-        <div class="venn-circle circle-bot">
-          <p class="circle-text">XGBoost</p>
-        </div>
-
-        <div class="venn-circle circle-left">
-          <p class="circle-text">Others</p>
-        </div>
-
-      </div>
-    </div>
-
-    <!--- Venn Diagram Container 3 -->
-    <div class="ven-skills-container">
-      <div class="venn-container">
-
-        <div class="venn-circle circle-center-main">
-          <p class="circle-text text-center-main">Business Intelligence</p>
-        </div>
-
-        <div class="venn-circle circle-top">
-          <p class="circle-text">MySQL</p>
-        </div>
-
-        <div class="venn-circle circle-right">
-          <p class="circle-text">Power BI</p>
-        </div>
-
-        <div class="venn-circle circle-bot">
-          <p class="circle-text">Excel/Google Sheets</p>
-        </div>
-
-        <div class="venn-circle circle-left">
-          <p class="circle-text">Dash Python</p>
-        </div>
-
-      </div>
-
-      <!--- Venn Diagram Container 4 -->
-      <div class="venn-container">
-
-        <div class="venn-circle circle-center-main">
-          <p class="circle-text text-center-main-2"><b>Learning/Work in progress</b> <br> Web Frameworks</p>
-        </div>
-
-        <div class="venn-circle circle-top-left">
-          <p class="circle-text">Flask</p>
-        </div>
-
-        <div class="venn-circle circle-top-right">
-          <p class="circle-text">Fast-API</p>
-        </div>
-
-        <div class="venn-circle circle-bot">
-          <p class="circle-text">Django</p>
-        </div>
-
-      </div>
-    </div>
-  </div>
-  <a id="experience" style="scroll-behavior: smooth; position:relative; top:2%"></a>
-  <!--- Experience -->
-  <div class="exp-strip">
-
-    <div class="slideshow-container">
-      <h1 class="text-center text-dark pt-2 ">Experience</h1>
-      <!--- Experience Labels -->
-      <div class="indicator-labels-container">
-        <span class="dot" onclick="currentSlide(1)" onmouseover="currentSlide(1)">Unlisted</span>
-        <span class="dot" onclick="currentSlide(2)" onmouseover="currentSlide(2)">Lumity</span>
-        <span class="dot" onclick="currentSlide(3)" onmouseover="currentSlide(3)">Soma</span>
-        <div class="break-flex-exp"></div>
-        <span class="dot" onclick="currentSlide(4)" onmouseover="currentSlide(4)">McCurrach</span>
-        <span class="dot" onclick="currentSlide(5)" onmouseover="currentSlide(5)">McCurrach</span>
-      </div>
-
-      <!--- Experience 1 -->
-      <div class="custom-slides custom-fade">
-        <div class="description-skills-container">
-          <div class="animate__animated animate__fadeInLeft description-item">
-            <h4 class="exp-title">Machine Learning Engineer</h4>
-            <h4 class="exp-period">May 2019 - September 2020</h4>
-            <p class="exp-description">When I joined Unlisted, it was a pre-product startup with an idea on
-              paper of how to estimate private
-              company valuations more accurately, based on public market information. I transformed that idea to an
-              actual ML
-              workflow,
-              taking data through the whole ETL and modelling process.</p>
+          <div class="venn-circle circle-center-main">
+            <p class="circle-text text-center-main">Business Intelligence</p>
           </div>
-          <div class="animate__animated animate__fadeInRight all-skills">
-            <p class="skills">Python</p>
-            <div class="container-skill">
-              <div class="skills-bar" id="exp-1-skill-1"></div>
-            </div>
-            <p class="skills">Scikit-Learn, XGBoost</p>
-            <div class="container-skill">
-              <div class="skills-bar" id="exp-1-skill-2"></div>
-            </div>
-            <p class="skills">Pytorch, MySQL</p>
-            <div class="container-skill">
-              <div class="skills-bar" id="exp-1-skill-3"></div>
-            </div>
-            <p class="skills">Dash-Python, Excel</p>
-            <div class="container-skill">
-              <div class="skills-bar" id="exp-1-skill-4"></div>
-            </div>
-          </div>
-        </div>
-        <ul class="exp-description">
-          <li>Worked closely with various stakeholders with financial markets expertise in order to thoroughly
-            understand the
-            problem and how to approach it from an ML perspective.</li>
-          <li>Managed the data pipeline from raw excel dumps to cleansed database format, within the AWS
-            ecosystem.</li>
-          <li>Designed an esemble approach to solving this specific challenge, while documenting my work extensively and
-            presenting it to a non-technical audience.</li>
-          <li>Developed the back-end application deployment code of models with Python.</li>
-          <li>Created an interactive dashboard in Dash-Python which worked similar to the front-end application.</li>
-          <li>Mentored multiple junior colleagues on databases, machine learning workflows and model training,
-            encouraging best
-            practice and healthy self-learning habits.</li>
-        </ul>
-      </div>
 
-      <!--- Experience 2 -->
-      <div class="custom-slides custom-fade">
-        <div class="description-skills-container">
-          <div class="animate__animated animate__fadeInLeft description-item">
-            <h4 class="exp-title">Data Analyst/Digital Data Scientist</h4>
-            <h4 class="exp-period">January 2018 - Present</h4>
-            <p class="exp-description">In the context of my work, Lumity is an e-commerce company, selling
-              their own unique products. When I joined, there was no fixed data function, which was a great opportunity
-              to build and
-              direct it as I considered best. The data I worked with was mainly sales, financial, marketing, along
-              with other
-              software
-              engineering tasks.</p>
+          <div class="venn-circle circle-top">
+            <p class="circle-text">MySQL</p>
           </div>
-          <div class="animate__animated animate__fadeInRight all-skills">
-            <p class="skills">Python, MySQL</p>
-            <div class="container-skill">
-              <div class="skills-bar" id="exp-2-skill-1"></div>
-            </div>
-            <p class="skills">AWS, Excel, Google Sheets, APIs</p>
-            <div class="container-skill">
-              <div class="skills-bar" id="exp-2-skill-2"></div>
-            </div>
-            <p class="skills">Klipfolio, Scikit-Learn, R</p>
-            <div class="container-skill">
-              <div class="skills-bar" id="exp-2-skill-3"></div>
-            </div>
-          </div>
-        </div>
-        <ul class="exp-description">
-          <li>Designed and built the data infrastructure in the form of a MySQL database, by using Python to extract,
-            prepare and
-            clean data from multiple external sources and APIs.</li>
-          <li>To manage the data related processes storage I used the AWS infrastructure, mainly EC2 instances.</li>
-          <li>Provided statistical and predictive insight by using machine learning algorithms about topics such as
-            customer
-            interaction, churn rate, marketing attribution modelling, stock/sales forecasts and PR ROI/Value.</li>
-          <li>Created marketing and financial reports with data visualization tools as Klipfolio and Power Bi, informing
-            on
-            the performance of the business.</li>
-          <li>The reporting infrastructure is almost completely automatic, with Google Sheets/Klipfolio reports being
-            delivered
-            on a daily basis to stakeholders and self updated via the Python based data workflows. Similarly, more
-            detailed Excel
-            reports are refreshed on a one-click-refresh basis, leveraging the more recent Excel Data/Power Query M
-            language.</li>
-          <li>Built multiple Python applications by using Shopify/ReCharge and other APIs, involving e-commerce
-            order fulfilment and complex product discounting.</li>
-          <li>Coordinated the website development team by managing the workload along with deadlines and translated
-            business requirements into technically actionable items.</li>
-          <li>Documented my work extensively in order to potentially be further maintained by less technical colleagues.
-          </li>
-        </ul>
-      </div>
 
-      <!--- Experience 3 -->
-      <div class="custom-slides custom-fade">
-        <div class="description-skills-container">
-          <div class="animate__animated animate__fadeInLeft description-item">
-            <h4 class="exp-title">Consulting</h4>
-            <h4 class="exp-period">April 2018 - June 2019</h4>
-            <p class="exp-description">My partnership with Dr. Cody Haun (Soma Scientific Consulting) stemmed
-              from the fact that I was competing in powerlifting and was looking for a high level coach. With a
-              scientific background, Dr Haun was gathering a lot of data when coaching clients and found it difficult
-              and time consuming to
-              manage. I completed all the work with Soma in my own personal time, while working full time for Lumity.
-            </p>
+          <div class="venn-circle circle-right">
+            <p class="circle-text">Power BI</p>
           </div>
-          <div class="animate__animated animate__fadeInRight all-skills">
-            <p class="skills">Google Sheets</p>
-            <div class="container-skill">
-              <div class="skills-bar" id="exp-3-skill-1"></div>
-            </div>
-            <p class="skills">JavaScript, Google Apps Script</p>
-            <div class="container-skill">
-              <div class="skills-bar" id="exp-3-skill-2"></div>
-            </div>
-          </div>
-        </div>
-        <ul class="exp-description">
-          <li>Built a complete reporting and client programming workflow in Google Sheets using advanced formulas and
-            leveraging GoogleApps/JavaScript.The main reason was to keep it lean costs wise and based on the
-            requirements of the
-            client.</li>
-          <li>The workflow was virtually identical to a normal front and back-end application. Each coaching client had
-            a front-end and a database spreadsheet, while one master sheet was able to control, review and plan new
-            training cycles.</li>
-          <li>Provided ongoing expert knowledge and execution around Google Sheets and Apps Scripts, working closely
-            with the company director to continually improve the developed product.</li>
-        </ul>
-      </div>
 
-      <!--- Experience 4 -->
-      <div class="custom-slides custom-fade">
-        <div class="description-skills-container">
-          <div class="animate__animated animate__fadeInLeft description-item">
-            <h4 class="exp-title">Business Insight Analyst</h4>
-            <h4 class="exp-period">May 2017 - December 2017</h4>
-            <p class="exp-description">My role as an Insight Analyst was to take a more holistic business view,
-              working with stakeholders to optimize the planning and execution processes for new clients.</p>
+          <div class="venn-circle circle-bot">
+            <p class="circle-text">Excel/Google Sheets</p>
           </div>
-          <div class="animate__animated animate__fadeInRight all-skills">
-            <p class="skills">Power Bi, Excel, PowerQuery M</p>
-            <div class="container-skill">
-              <div class="skills-bar" id="exp-4-skill-1"></div>
-            </div>
-            <p class="skills">R, MySQL</p>
-            <div class="container-skill">
-              <div class="skills-bar" id="exp-4-skill-2"></div>
-            </div>
-          </div>
-        </div>
-        <ul class="exp-description">
-          <li>Led the improvement of tools evaluating shape of service through statistical analysis resulting in an ROI
-            increase.</li>
-          <li>Implemented complex reporting suites using Business Intelligence tools such as Power Bi through direct
-            database querying.</li>
-          <li>Responsible for the completion of operational planning processes in a timely and qualitative manner by
-            collaborating with multiple stakeholders such as business unit operating directors.</li>
-          <li>Highly skilled in analyzing significant volumes of data to identify trends and outcomes.</li>
-          <li>Guided multiple colleagues on best practice and automation of reports built with Excel and Power Bi.</li>
-        </ul>
-      </div>
 
-      <!--- Experience 5 -->
-      <div class="custom-slides custom-fade">
-        <div class="description-skills-container">
-          <div class="animate__animated animate__fadeInLeft description-item">
-            <h4 class="exp-title">Market Analyst/Operations Executive</h4>
-            <h4 class="exp-period">October 2015 - March 2017</h4>
-            <p class="exp-description">McCurrach is a sales consultancy which works with multiple brands to
-              increase sales in both large and smaller national stores. All the data captured is then analysed to
-              observe KPI adherence, which was my main responsability.</p>
+          <div class="venn-circle circle-left">
+            <p class="circle-text">Dash Python</p>
           </div>
-          <div class="animate__animated animate__fadeInRight all-skills">
-            <p class="skills">Excel, PowerPivot</p>
-            <div class="container-skill">
-              <div class="skills-bar" id="exp-5-skill-1"></div>
-            </div>
-            <p class="skills">Power Bi, MySQL</p>
-            <div class="container-skill">
-              <div class="skills-bar" id="exp-5-skill-2"></div>
-            </div>
-          </div>
+
         </div>
-        <ul class="exp-description">
-          <li>Created multiple reporting suites over large data sets to ensure high levels of KPI management are
-            delivered automatically, by leveraging Power Query M language.</li>
-          <li>Created the framework to analyze ROI drivers and establish long-term performance indicators for a new type
-            of business.</li>
-          <li>Coordinated the expansion of a business unit that doubled in size from operational and reporting
-            perspectives.</li>
-          <li>Built strong relationships at various levels internally and with external clients, in order to achieve
-            business and wider organiza-tional goals.</li>
-        </ul>
+
+        <!--- Venn Diagram Container 4 -->
+        <div class="venn-container">
+
+          <div class="venn-circle circle-center-main">
+            <p class="circle-text text-center-main-2"><b>Learning/Work in progress</b> <br> Web Frameworks</p>
+          </div>
+
+          <div class="venn-circle circle-top-left">
+            <p class="circle-text">Flask</p>
+          </div>
+
+          <div class="venn-circle circle-top-right">
+            <p class="circle-text">Fast-API</p>
+          </div>
+
+          <div class="venn-circle circle-bot">
+            <p class="circle-text">Django</p>
+          </div>
+
+        </div>
       </div>
     </div>
-  </div>
+  </section>
+  <section id="experience" style="scroll-behavior: smooth;">
+    <!--- Experience -->
+    <div class="exp-strip">
+
+      <div class="slideshow-container">
+        <h1 class="text-center text-dark pt-2 ">Experience</h1>
+        <!--- Experience Labels -->
+        <div class="indicator-labels-container">
+          <span class="dot" onclick="currentSlide(1)" onmouseover="currentSlide(1)">Unlisted</span>
+          <span class="dot" onclick="currentSlide(2)" onmouseover="currentSlide(2)">Lumity</span>
+          <span class="dot" onclick="currentSlide(3)" onmouseover="currentSlide(3)">Soma</span>
+          <div class="break-flex-exp"></div>
+          <span class="dot" onclick="currentSlide(4)" onmouseover="currentSlide(4)">McCurrach</span>
+          <span class="dot" onclick="currentSlide(5)" onmouseover="currentSlide(5)">McCurrach</span>
+        </div>
+
+        <!--- Experience 1 -->
+        <div class="custom-slides custom-fade">
+          <div class="description-skills-container">
+            <div class="animate__animated animate__fadeInLeft description-item">
+              <h4 class="exp-title">Machine Learning Engineer</h4>
+              <h4 class="exp-period">May 2019 - September 2020</h4>
+              <p class="exp-description">When I joined Unlisted, it was a pre-product startup with an idea on
+                paper of how to estimate private
+                company valuations more accurately, based on public market information. I transformed that idea to an
+                actual ML
+                workflow,
+                taking data through the whole ETL and modelling process.</p>
+            </div>
+            <div class="animate__animated animate__fadeInRight all-skills">
+              <p class="skills">Python</p>
+              <div class="container-skill">
+                <div class="skills-bar" id="exp-1-skill-1"></div>
+              </div>
+              <p class="skills">Scikit-Learn, XGBoost</p>
+              <div class="container-skill">
+                <div class="skills-bar" id="exp-1-skill-2"></div>
+              </div>
+              <p class="skills">Pytorch, MySQL</p>
+              <div class="container-skill">
+                <div class="skills-bar" id="exp-1-skill-3"></div>
+              </div>
+              <p class="skills">Dash-Python, Excel</p>
+              <div class="container-skill">
+                <div class="skills-bar" id="exp-1-skill-4"></div>
+              </div>
+            </div>
+          </div>
+          <ul class="exp-description">
+            <li>Worked closely with various stakeholders with financial markets expertise in order to thoroughly
+              understand the
+              problem and how to approach it from an ML perspective.</li>
+            <li>Managed the data pipeline from raw excel dumps to cleansed database format, within the AWS
+              ecosystem.</li>
+            <li>Designed an esemble approach to solving this specific challenge, while documenting my work extensively
+              and
+              presenting it to a non-technical audience.</li>
+            <li>Developed the back-end application deployment code of models with Python.</li>
+            <li>Created an interactive dashboard in Dash-Python which worked similar to the front-end application.</li>
+            <li>Mentored multiple junior colleagues on databases, machine learning workflows and model training,
+              encouraging best
+              practice and healthy self-learning habits.</li>
+          </ul>
+        </div>
+
+        <!--- Experience 2 -->
+        <div class="custom-slides custom-fade">
+          <div class="description-skills-container">
+            <div class="animate__animated animate__fadeInLeft description-item">
+              <h4 class="exp-title">Data Analyst/Digital Data Scientist</h4>
+              <h4 class="exp-period">January 2018 - Present</h4>
+              <p class="exp-description">In the context of my work, Lumity is an e-commerce company, selling
+                their own unique products. When I joined, there was no fixed data function, which was a great
+                opportunity
+                to build and
+                direct it as I considered best. The data I worked with was mainly sales, financial, marketing, along
+                with other
+                software
+                engineering tasks.</p>
+            </div>
+            <div class="animate__animated animate__fadeInRight all-skills">
+              <p class="skills">Python, MySQL</p>
+              <div class="container-skill">
+                <div class="skills-bar" id="exp-2-skill-1"></div>
+              </div>
+              <p class="skills">AWS, Excel, Google Sheets, APIs</p>
+              <div class="container-skill">
+                <div class="skills-bar" id="exp-2-skill-2"></div>
+              </div>
+              <p class="skills">Klipfolio, Scikit-Learn, R</p>
+              <div class="container-skill">
+                <div class="skills-bar" id="exp-2-skill-3"></div>
+              </div>
+            </div>
+          </div>
+          <ul class="exp-description">
+            <li>Designed and built the data infrastructure in the form of a MySQL database, by using Python to extract,
+              prepare and
+              clean data from multiple external sources and APIs.</li>
+            <li>To manage the data related processes storage I used the AWS infrastructure, mainly EC2 instances.</li>
+            <li>Provided statistical and predictive insight by using machine learning algorithms about topics such as
+              customer
+              interaction, churn rate, marketing attribution modelling, stock/sales forecasts and PR ROI/Value.</li>
+            <li>Created marketing and financial reports with data visualization tools as Klipfolio and Power Bi,
+              informing
+              on
+              the performance of the business.</li>
+            <li>The reporting infrastructure is almost completely automatic, with Google Sheets/Klipfolio reports being
+              delivered
+              on a daily basis to stakeholders and self updated via the Python based data workflows. Similarly, more
+              detailed Excel
+              reports are refreshed on a one-click-refresh basis, leveraging the more recent Excel Data/Power Query M
+              language.</li>
+            <li>Built multiple Python applications by using Shopify/ReCharge and other APIs, involving e-commerce
+              order fulfilment and complex product discounting.</li>
+            <li>Coordinated the website development team by managing the workload along with deadlines and translated
+              business requirements into technically actionable items.</li>
+            <li>Documented my work extensively in order to potentially be further maintained by less technical
+              colleagues.
+            </li>
+          </ul>
+        </div>
+
+        <!--- Experience 3 -->
+        <div class="custom-slides custom-fade">
+          <div class="description-skills-container">
+            <div class="animate__animated animate__fadeInLeft description-item">
+              <h4 class="exp-title">Consulting</h4>
+              <h4 class="exp-period">April 2018 - June 2019</h4>
+              <p class="exp-description">My partnership with Dr. Cody Haun (Soma Scientific Consulting) stemmed
+                from the fact that I was competing in powerlifting and was looking for a high level coach. With a
+                scientific background, Dr Haun was gathering a lot of data when coaching clients and found it difficult
+                and time consuming to
+                manage. I completed all the work with Soma in my own personal time, while working full time for Lumity.
+              </p>
+            </div>
+            <div class="animate__animated animate__fadeInRight all-skills">
+              <p class="skills">Google Sheets</p>
+              <div class="container-skill">
+                <div class="skills-bar" id="exp-3-skill-1"></div>
+              </div>
+              <p class="skills">JavaScript, Google Apps Script</p>
+              <div class="container-skill">
+                <div class="skills-bar" id="exp-3-skill-2"></div>
+              </div>
+            </div>
+          </div>
+          <ul class="exp-description">
+            <li>Built a complete reporting and client programming workflow in Google Sheets using advanced formulas and
+              leveraging GoogleApps/JavaScript.The main reason was to keep it lean costs wise and based on the
+              requirements of the
+              client.</li>
+            <li>The workflow was virtually identical to a normal front and back-end application. Each coaching client
+              had
+              a front-end and a database spreadsheet, while one master sheet was able to control, review and plan new
+              training cycles.</li>
+            <li>Provided ongoing expert knowledge and execution around Google Sheets and Apps Scripts, working closely
+              with the company director to continually improve the developed product.</li>
+          </ul>
+        </div>
+
+        <!--- Experience 4 -->
+        <div class="custom-slides custom-fade">
+          <div class="description-skills-container">
+            <div class="animate__animated animate__fadeInLeft description-item">
+              <h4 class="exp-title">Business Insight Analyst</h4>
+              <h4 class="exp-period">May 2017 - December 2017</h4>
+              <p class="exp-description">My role as an Insight Analyst was to take a more holistic business view,
+                working with stakeholders to optimize the planning and execution processes for new clients.</p>
+            </div>
+            <div class="animate__animated animate__fadeInRight all-skills">
+              <p class="skills">Power Bi, Excel, PowerQuery M</p>
+              <div class="container-skill">
+                <div class="skills-bar" id="exp-4-skill-1"></div>
+              </div>
+              <p class="skills">R, MySQL</p>
+              <div class="container-skill">
+                <div class="skills-bar" id="exp-4-skill-2"></div>
+              </div>
+            </div>
+          </div>
+          <ul class="exp-description">
+            <li>Led the improvement of tools evaluating shape of service through statistical analysis resulting in an
+              ROI
+              increase.</li>
+            <li>Implemented complex reporting suites using Business Intelligence tools such as Power Bi through direct
+              database querying.</li>
+            <li>Responsible for the completion of operational planning processes in a timely and qualitative manner by
+              collaborating with multiple stakeholders such as business unit operating directors.</li>
+            <li>Highly skilled in analyzing significant volumes of data to identify trends and outcomes.</li>
+            <li>Guided multiple colleagues on best practice and automation of reports built with Excel and Power Bi.
+            </li>
+          </ul>
+        </div>
+
+        <!--- Experience 5 -->
+        <div class="custom-slides custom-fade">
+          <div class="description-skills-container">
+            <div class="animate__animated animate__fadeInLeft description-item">
+              <h4 class="exp-title">Market Analyst/Operations Executive</h4>
+              <h4 class="exp-period">October 2015 - March 2017</h4>
+              <p class="exp-description">McCurrach is a sales consultancy which works with multiple brands to
+                increase sales in both large and smaller national stores. All the data captured is then analysed to
+                observe KPI adherence, which was my main responsability.</p>
+            </div>
+            <div class="animate__animated animate__fadeInRight all-skills">
+              <p class="skills">Excel, PowerPivot</p>
+              <div class="container-skill">
+                <div class="skills-bar" id="exp-5-skill-1"></div>
+              </div>
+              <p class="skills">Power Bi, MySQL</p>
+              <div class="container-skill">
+                <div class="skills-bar" id="exp-5-skill-2"></div>
+              </div>
+            </div>
+          </div>
+          <ul class="exp-description">
+            <li>Created multiple reporting suites over large data sets to ensure high levels of KPI management are
+              delivered automatically, by leveraging Power Query M language.</li>
+            <li>Created the framework to analyze ROI drivers and establish long-term performance indicators for a new
+              type
+              of business.</li>
+            <li>Coordinated the expansion of a business unit that doubled in size from operational and reporting
+              perspectives.</li>
+            <li>Built strong relationships at various levels internally and with external clients, in order to achieve
+              business and wider organiza-tional goals.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!--- Education-->
-  <a id="education" style="scroll-behavior: smooth; position:relative; top:5%"></a>
-  <div class="bg-dark pb-5">
-    <div class="education-container bg-dark pt-3">
-      <h1 class="text-center text-light pt-5 pb-5">Education</h1>
+  <section id="education" style="scroll-behavior: smooth pt-1">
+    <div class="bg-dark pb-5">
+      <div class="education-container bg-dark pt-3">
+        <h1 class="text-center text-light pt-5 pb-5">Education</h1>
 
-      <!--- Education Row 1-->
-      <div class="timeline-row timeline-row-left bg-1">
-        <div class="timeline-title-year">
-          <div class="timeline-title text-left">Joint Degree Business & Management and Psychology</div>
-          <div class="timeline-year">September 2011 <br> June 2015</div>
-        </div>
-        <div class="timeline-description-overlay">
-          <div class="timeline-description timeline-description-left">
-            <ul>
-              <li>Focused on organizational psychology, financial management and change.</li>
-              <li>Successfully completed a highly
-                regarded dissertation in the area of Leadership.</li>
-            </ul>
+        <!--- Education Row 1-->
+        <div class="timeline-row timeline-row-left bg-1">
+          <div class="timeline-title-year">
+            <div class="timeline-title text-left text-light">Joint Degree Business & Management and Psychology</div>
+            <div class="timeline-year text-light">September 2011 <br> June 2015</div>
           </div>
-          <div class="timeline-overlay timeline-overlay-left"></div>
+          <div class="timeline-description-overlay">
+            <div class="timeline-description timeline-description-left">
+              <ul>
+                <li>Focused on organizational psychology, financial management and change.</li>
+                <li>Successfully completed a highly
+                  regarded dissertation in the area of Leadership.</li>
+              </ul>
+            </div>
+            <div class="timeline-overlay timeline-overlay-left"></div>
+          </div>
         </div>
+
+        <!--- Education Row 2-->
+        <div class="timeline-row timeline-row-right bg-2">
+          <div class="timeline-title-year">
+            <div class="timeline-year text-light">2017 - 2019</div>
+            <div class="timeline-title text-right text-light">Datacamp</div>
+          </div>
+          <div class="timeline-description-overlay">
+            <div class="timeline-description timeline-description-right">
+              <ul>
+                <li>I decided to learn both programming in Python/R along with Machine Learning.</li>
+                <li>Completed 25 courses on the DataCamp platform, for example:
+                  <a href="https://www.datacamp.com/statement-of-accomplishment/course/e00bf9f4330829f59fc364ab9052eebc749ea4e7"
+                    target="_blank">1</a>,
+                  <a href="https://www.datacamp.com/statement-of-accomplishment/course/6c0363a9c557105f1a32364f21769232d5f36201"
+                    target="_blank">2</a>,
+                  <a href="https://www.datacamp.com/statement-of-accomplishment/course/d683de0ded25f7ba4d2a37e7e163494a3abfd7f6"
+                    target="_blank">3</a>,
+                  <a href="https://www.datacamp.com/statement-of-accomplishment/course/8ff4326e94203215e93ffa0abf54dd9db17681df"
+                    target="_blank">4</a>,
+                  <a href="https://www.datacamp.com/statement-of-accomplishment/course/ba64ceb224c04d1c8f2b2d4ee93d65c179009056"
+                    target="_blank">5</a>.
+                </li>
+              </ul>
+            </div>
+            <div class="timeline-overlay timeline-overlay-right"></div>
+          </div>
+        </div>
+
+        <!--- Education Row 3-->
+        <div class="timeline-row timeline-row-left bg-1">
+          <div class="timeline-title-year">
+            <div class="timeline-title text-left text-light">Udemy</div>
+            <div class="timeline-year text-light">2019 - Present</div>
+          </div>
+          <div class="timeline-description-overlay">
+            <div class="timeline-description timeline-description-left">
+              <ul>
+                <li>Continued my education by taking targeted courses on specific topics I am particularly interested
+                  in,
+                  such as
+                  <a href="https://www.udemy.com/certificate/UC-L7FW093K/" target="_blank">Deep Learning</a>,
+                  <a href="https://www.udemy.com/certificate/UC-GX1DSAB3/" target="_blank">Reinforcement Learning</a>
+                  and
+                  others.</li>
+              </ul>
+            </div>
+            <div class="timeline-overlay timeline-overlay-left"></div>
+          </div>
+        </div>
+
+        <!--- Education Row 4-->
+        <div class="timeline-row timeline-row-right bg-2">
+          <div class="timeline-title-year">
+            <div class="timeline-year text-light">Ongoing</div>
+            <div class="timeline-title text-right text-light">Internet, Youtube, Others</div>
+          </div>
+          <div class="timeline-description-overlay">
+            <div class="timeline-description timeline-description-right">
+              <ul>
+                <li>Internet is by far the most important resource in figuring out any challenges and expanding
+                  knowledge.</li>
+                <li>Special mentions to
+                  <a href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw" target="_blank">3Blue1Brown</a> for
+                  providing priceless intuitive explanations in the area of mathematics and
+                  <a href="https://www.youtube.com/channel/UCtYLUTtgS3k1Fg4y5tAhLbw" target="_blank">StatQuest with Josh
+                    Starmer</a> for demonstrating statistics and basic machine learning concepts seamlessly.
+                </li>
+                <li>Countless <a href="https://towardsdatascience.com/" target="_blank"> Towards Data Science </a>
+                  articles which are great at introducing new concepts to analyze deeper.</li>
+              </ul>
+            </div>
+            <div class="timeline-overlay timeline-overlay-right"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="scroll-behavior: smooth">
+    <div class="container-fluid summary-container text-center text-light pb-2">
+      <h1 class="p-5">Contact</h1>
+      <div class="pt-5 pb-5">
+        <a href="mailto:daniel.balseanu@gmail.com">
+          <i class="far fa-envelope" style="font-size:120px;color:white;"></i>
+        </a>
+        <h5>daniel.balseanu@gmail.com</h5>
       </div>
 
-      <!--- Education Row 2-->
-      <div class="timeline-row timeline-row-right bg-2">
-        <div class="timeline-title-year">
-          <div class="timeline-year text-light">2017 - 2019</div>
-          <div class="timeline-title text-right text-light">Datacamp</div>
-        </div>
-        <div class="timeline-description-overlay">
-          <div class="timeline-description timeline-description-right">
-            <ul>
-              <li>I decided to learn both programming in Python/R along with Machine Learning.</li>
-              <li>Completed 25 courses on the DataCamp platform, for example:
-                <a href="https://www.datacamp.com/statement-of-accomplishment/course/e00bf9f4330829f59fc364ab9052eebc749ea4e7"
-                  target="_blank">1</a>,
-                <a href="https://www.datacamp.com/statement-of-accomplishment/course/6c0363a9c557105f1a32364f21769232d5f36201"
-                  target="_blank">2</a>,
-                <a href="https://www.datacamp.com/statement-of-accomplishment/course/d683de0ded25f7ba4d2a37e7e163494a3abfd7f6"
-                  target="_blank">3</a>,
-                <a href="https://www.datacamp.com/statement-of-accomplishment/course/8ff4326e94203215e93ffa0abf54dd9db17681df"
-                  target="_blank">4</a>,
-                <a href="https://www.datacamp.com/statement-of-accomplishment/course/ba64ceb224c04d1c8f2b2d4ee93d65c179009056"
-                  target="_blank">5</a>.
-              </li>
-            </ul>
-          </div>
-          <div class="timeline-overlay timeline-overlay-right"></div>
-        </div>
+      <div class="p-5">
+        <a href="https://www.linkedin.com/in/danielbalseanu/" target="_blank">
+          <i class="fa fa-linkedin-square" style="font-size:120px;color:white;"></i>
+        </a>
       </div>
 
-      <!--- Education Row 3-->
-      <div class="timeline-row timeline-row-left bg-1">
-        <div class="timeline-title-year">
-          <div class="timeline-title text-left">Udemy</div>
-          <div class="timeline-year">2019 - Present</div>
-        </div>
-        <div class="timeline-description-overlay">
-          <div class="timeline-description timeline-description-left">
-            <ul>
-              <li>Continued my education by taking targeted courses on specific topics I am particularly interested in,
-                such as
-                <a href="https://www.udemy.com/certificate/UC-L7FW093K/" target="_blank">Deep Learning</a>,
-                <a href="https://www.udemy.com/certificate/UC-GX1DSAB3/" target="_blank">Reinforcement Learning</a> and
-                others.</li>
-            </ul>
-          </div>
-          <div class="timeline-overlay timeline-overlay-left"></div>
-        </div>
-      </div>
-
-      <!--- Education Row 4-->
-      <div class="timeline-row timeline-row-right bg-2">
-        <div class="timeline-title-year">
-          <div class="timeline-year text-light">Ongoing</div>
-          <div class="timeline-title text-right text-light">Internet, Youtube, Medium</div>
-        </div>
-        <div class="timeline-description-overlay">
-          <div class="timeline-description timeline-description-right">
-            <ul>
-              <li>Internet is by far the most important resource in figuring out any challenges and expanding knowledge.</li>
-              <li>Special mentions to 
-                <a href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw"
-                  target="_blank">3Blue1Brown</a> for providing priceless intuitive explanations in the area of mathematics and 
-                <a href="https://www.youtube.com/channel/UCtYLUTtgS3k1Fg4y5tAhLbw"
-                  target="_blank">StatQuest with Josh Starmer</a> for demonstrating statistics and basic machine learning concepts seamlessly.
-              </li>
-              <li>Countless Medium articles which are great at informing on new concepts that can then be analysed deeper.</li>
-            </ul>
-          </div>
-          <div class="timeline-overlay timeline-overlay-right"></div>
-        </div>
+      <div class="p-5">
+        <a href="https://github.com/DanielBlsn" target="_blank">
+          <i class="fab fa-github" style="font-size:120px;color:white;"></i>
+        </a>
       </div>
 
     </div>
-  </div>
-
-  <div style="height: 30vh;"></div>
+  </section>
   <div class="text-center text-light h10">
     © Copyright danielbalseanu 2020.
   </div>
   <!--- JS for experience timeline -->
-  <script src="js/animated-timeline.js"></script>
+  <script src="js/experience-slides.js"></script>
   <script src="js/navbar.js"></script>
 </body>
 
