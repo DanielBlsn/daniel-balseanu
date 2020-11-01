@@ -54,6 +54,7 @@ html {
 
 @media screen and (max-width: 1120px) {
     #custom-navbar {
+        background-color: rgba(47, 109, 150, 0.85);
         width: 100%;
         right: auto;
         height: 45px;
