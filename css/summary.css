@@ -23,6 +23,7 @@ body {
   justify-content: space-between;
   width: calc(100vw/4 + 300px);
   padding-top: 200px;
+  padding-bottom: 120px;
 }
 
 /* realign flexbox to columns on small screen */
@@ -37,10 +38,12 @@ body {
     align-items: center;
     padding-top: 120px;
     width: auto;
+    padding-bottom: 0;
   }
 
  .ven-skills-container-2{
     padding-top: 0;
+    padding-bottom: 0;
   }
   .venn-container{
     margin-bottom: 200px;
