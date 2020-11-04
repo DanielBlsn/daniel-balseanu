@@ -53,7 +53,7 @@ function openNav() {
 
 // Close the navbar by making the elments hidden and shrinking the button
 function closeNav() {
-  if (window.innerWidth < 480) {
+  if (window.innerWidth <= 480) {
     mainNavIds.forEach((navbarElementId) => {
       navbarElementId.style.visibility = "hidden";
     });
