@@ -33,6 +33,9 @@ html {
 
 .active {
     background-color: rgba(47, 109, 150, 0.95);
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
     color: white;
 }
 
@@ -52,8 +55,39 @@ html {
     display: none;
 }
 
+/* Intermediate screen sizes make navbar on screen width/rows with all options visible */
+
 @media screen and (max-width: 1120px) {
     #custom-navbar {
+        background-color: rgba(47, 109, 150, 0.85);
+        flex-direction: row;
+        width: 100%;
+        right: auto;
+        height: 50px;
+    }
+    .navbar-item {
+        width: 100%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sticky {
+        top: 0%;
+    }
+    .navbar-item-menu {
+        display: none;
+    }
+    .pre-sticky {
+        top: 0%;
+    }
+}
+
+/* phone size navbar dropdown */
+
+@media screen and (max-width: 480px) {
+    #custom-navbar {
+        flex-direction: column;
         background-color: rgba(47, 109, 150, 0.85);
         width: 100%;
         right: auto;
@@ -72,5 +106,8 @@ html {
     }
     .navbar-item-menu {
         visibility: visible;
+    }
+    .pre-sticky {
+        top: 0%;
     }
 }

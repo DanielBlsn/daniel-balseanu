@@ -11,27 +11,28 @@ function stickyNavbar() {
   // Add the sticky class to the navbar when you reach its scroll position.
   if (window.pageYOffset >= sticky) {
     navbar.className = "sticky";
-  } else {
+  } else if (window.innerWidth >= 1120){
     // Add pre-sticky otherwise to keep position absolute.
     navbar.className = "pre-sticky";
   }
 }
 
+// Select all navbar menu items whose start (^) id string is below
+// will be used in 2 separate functions
+let mainNavIds = document.querySelectorAll('[id^="menu-item-"]');
 
 function highlightNavbarElement() {
-  // Select all navbar menu items whose start (^) id string is below
-  let mainNavLinks = document.querySelectorAll('[id^="menu-item-"]');
 
   let fromTop = window.scrollY;
 
-  mainNavLinks.forEach((link, i) => {
-    let section = document.querySelector(link.hash);
+  mainNavIds.forEach((navbarElementId, i) => {
+    let section = document.querySelector(navbarElementId.hash);
     var currentActive = document.getElementsByClassName("active")[0];
     section.offsetTop + section.offsetHeight > fromTop;
     if (section.offsetTop <= fromTop &&
       section.offsetTop + section.offsetHeight > fromTop) {
       currentActive.classList.remove("active");
-      link.classList.add("active");
+      navbarElementId.classList.add("active");
     }
   });
 }
@@ -43,31 +44,32 @@ function openNav() {
   if (document.getElementById("menu-item-1").style.visibility == "visible") {
     closeNav()
   } else {
-    document.getElementById("menu-item-1").style.visibility = "visible";
-    document.getElementById("menu-item-2").style.visibility = "visible";
-    document.getElementById("menu-item-3").style.visibility = "visible";
-    document.getElementById("menu-item-4").style.visibility = "visible";
+    mainNavIds.forEach((navbarId) => {
+      navbarId.style.visibility = "visible";
+    });
     document.getElementById("custom-navbar").style.height = "auto";
   }
 }
 
 // Close the navbar by making the elments hidden and shrinking the button
 function closeNav() {
-  if (window.innerWidth < 1120) {
-    document.getElementById("menu-item-1").style.visibility = "hidden";
-    document.getElementById("menu-item-2").style.visibility = "hidden";
-    document.getElementById("menu-item-3").style.visibility = "hidden";
-    document.getElementById("menu-item-4").style.visibility = "hidden";
+  if (window.innerWidth < 480) {
+    mainNavIds.forEach((navbarElementId) => {
+      navbarElementId.style.visibility = "hidden";
+    });
+    // Make the whote navbar dropdown the height of 1 element
+    // Otherwise it retains the height of 5 items stacked
     document.getElementById("custom-navbar").style.height = document.getElementById("menu-item-1").style.height;
 
   }
 }
 
 // When going from small screen navbar to large screen navbar the visibility will be set to hidden
-// Make all navbar elements visible when screen width is bigger than 1120
-window.addEventListener('resize', makeVisibleNavbar);
+// Make all navbar elements visible when screen width is bigger than 480
+// Also add sticky navbar for when the resize is done via maximize/minimize buttons
+window.addEventListener('resize', makeVisibleNavbar, stickyNavbar)
 function makeVisibleNavbar() {
-  if (window.innerWidth > 1120) {
+  if (window.innerWidth > 480) {
     openNav();
   }
   else {

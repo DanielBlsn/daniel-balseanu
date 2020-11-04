@@ -1,6 +1,7 @@
 .education-container {
   display: flex;
   flex-direction: column;
+  min-height: 100%;
   width: calc(100vw/4 + 480px);
   max-width: 90vw;
   position: relative;
