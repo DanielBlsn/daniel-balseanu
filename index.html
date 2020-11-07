@@ -23,15 +23,16 @@
   <link rel="stylesheet" type="text/css" href="css/summary.css" />
   <link rel="stylesheet" type="text/css" href="css/navigation.css" />
   <link rel="stylesheet" type="text/css" href="css/education.css" />
+  <link rel="stylesheet" type="text/css" href="css/contact-form.css" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-J5WJZRC1VF"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-J5WJZRC1VF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-	  gtag('config', 'G-J5WJZRC1VF');
-	</script>
+    gtag('config', 'G-J5WJZRC1VF');
+  </script>
   <title></title>
 </head>
 
@@ -501,26 +502,55 @@
   <section id="contact" style="scroll-behavior: smooth">
     <div class="container-fluid summary-container text-center text-light pb-2">
       <h1 class="p-5">Contact</h1>
-      <div class="pt-5 pb-5">
-        <h3 class="p-4">Email me at</h3>
-        <a href="mailto:daniel.balseanu@gmail.com">
-          <i class="far fa-envelope" style="font-size:40px;color:white;"></i>
-        </a>
-        <h5>daniel.balseanu@gmail.com</h5>
+      <div class="row justify-content-center">
+        <div>
+          <a href="mailto:daniel.balseanu@gmail.com">
+            <i class="far fa-envelope" style="font-size:40px;color:white;"></i>
+          </a>
+          <h5>daniel.balseanu@gmail.com</h5>
+        </div>
       </div>
+      <div class="row justify-content-center pb-5">
+        <div class="p-5">
+          <a href="https://www.linkedin.com/in/danielbalseanu/" target="_blank">
+            <i class="fa fa-linkedin-square" style="font-size:40px;color:white;"></i>
+          </a>
+        </div>
 
-      <div class="p-5">
-        <h3 class="p-4">Connect with me on</h3>
-        <a href="https://www.linkedin.com/in/danielbalseanu/" target="_blank">
-          <i class="fa fa-linkedin-square" style="font-size:40px;color:white;"></i>
-        </a>
+        <div class="p-5">
+          <a href="https://github.com/DanielBlsn" target="_blank">
+            <i class="fab fa-github" style="font-size:40px;color:white;"></i>
+          </a>
+        </div>
       </div>
+      <iframe name="contact-form-iframe" style="display:none;"></iframe>
+      <div class="cotnact-form-container">
+        <form method="POST"
+          action="https://script.google.com/macros/s/AKfycbyiMTG_S1DDhcBkt8MCJTJLS7_OnJzFOpksr9teiQ/exec"
+          target="contact-form-iframe" id="contact-form">
 
-      <div class="p-5">
-        <h3 class="p-4">View my projects on</h3>
-        <a href="https://github.com/DanielBlsn" target="_blank">
-          <i class="fab fa-github" style="font-size:40px;color:white;"></i>
-        </a>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name..">
+
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="Your email address..">
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Message.." style="height:200px"></textarea>
+
+          <input type="button" value="Submit" id="submit-button">
+
+        </form>
+      </div>
+      <!-- Modal Message on submit -->
+      <div id="submit-message" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span id="close-modal">&times;</span>
+          <p>Thank you for your message, I will be in contact as soon as possible.</p>
+        </div>
+
       </div>
 
     </div>
@@ -528,8 +558,11 @@
   <div class="text-center text-light h10">
     © Copyright danielbalseanu 2020.
   </div>
+  <!--- JS for contact form -->
+  <script src="js/contact-form.js"></script>
   <!--- JS for experience timeline -->
   <script src="js/experience-slides.js"></script>
+  <!--- JS for navbar -->
   <script src="js/navbar.js"></script>
 </body>
 
