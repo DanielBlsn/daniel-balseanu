@@ -36,12 +36,12 @@
 
 .timeline-row-left {
   border-radius: 0 30px 30px 0;
-  align-self: start;
+  align-self: flex-start;
 }
 
 .timeline-row-right {
   border-radius: 30px 0 0 30px;
-  align-self: end;
+  align-self: flex-end;
 }
 
 .timeline-title-year {
